@@ -1,4 +1,6 @@
-# Starting Up
+# Git Cheat Sheet
+
+This is a collection of git commands that I frequently used for my daily tasks.
 
 ### Create local git, initial push to remote
 ```bash
