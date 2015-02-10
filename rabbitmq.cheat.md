@@ -43,3 +43,9 @@ rabbitmqctl stop
 
 ## Basic queue management
 
+Restarting RabbitMQ will not remove persistent queues, etc. To reset and clean up everything (queues, vhosts, users), do:
+```bash
+rabbitmqctl stop_app
+rabbitmqctl reset
+rabbitmqctl start_app
+```
