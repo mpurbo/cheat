@@ -188,6 +188,10 @@ Source: [THE DIFFERENCE BETWEEN GIT PULL, GIT FETCH AND GIT CLONE (AND GIT REBAS
         <td><code>git checkout -b [branch-name]</code></td>
     </tr>
     <tr>
+        <td>Pull other branch.</td>
+        <td><code>git pull origin [branch-name]</code></td>
+    </tr>
+    <tr>
         <td>Merge branch.</td>
         <td><code>git merge [branch-name]</code></td>
     </tr>
