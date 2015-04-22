@@ -95,12 +95,12 @@ Source: [THE DIFFERENCE BETWEEN GIT PULL, GIT FETCH AND GIT CLONE (AND GIT REBAS
         <td>Undo commit and discard changes.</td>
         <td>
             <pre>
-            ## 1 commit
-            git reset --hard HEAD~1 
-            ## 5 commit
-            git reset --hard HEAD~5
-            ## specific commit
-            git reset --hard [commit-sha]
+## 1 commit
+git reset --hard HEAD~1 
+## 5 commit
+git reset --hard HEAD~5
+## specific commit
+git reset --hard [commit-sha]
             </pre>
         </td>
     </tr>
@@ -136,8 +136,8 @@ Source: [THE DIFFERENCE BETWEEN GIT PULL, GIT FETCH AND GIT CLONE (AND GIT REBAS
         <td>Replace local rep with remote (rewrite all local changes)</td>
         <td>
             <pre>
-            git fetch --all
-            git reset --hard origin/master
+git fetch --all
+git reset --hard origin/master
             </pre>
         </td>
     </tr>
@@ -145,14 +145,18 @@ Source: [THE DIFFERENCE BETWEEN GIT PULL, GIT FETCH AND GIT CLONE (AND GIT REBAS
         <td>Remove a file from the repository without deleting it from the local filesystem (useful if we add some files to .gitignore and we want to untrack it).</td>
         <td>
             <pre>
-            # 1 file:
-            git rm --cached [file] 
+# 1 file:
+git rm --cached [file] 
 
-            # multiple files
-            git rm -r --cached .
-            git add .  
+# multiple files
+git rm -r --cached .
+git add .  
             </pre>
         </td>
+    </tr>
+    <tr>
+        <td>Delete the last commit already pushed to remote (e.g. origin last commit was [hash])</td>
+        <td><code>git push origin +[hash]^:master</code></td>
     </tr>
 </table>
 
@@ -172,10 +176,10 @@ Source: [THE DIFFERENCE BETWEEN GIT PULL, GIT FETCH AND GIT CLONE (AND GIT REBAS
         <td>Create branch from unstaged/uncommitted changes on master.</td>
         <td>
             <pre>
-            git checkout -b new_branch
-            git commit -am "edited"
-            git checkout master
-            git status
+git checkout -b new_branch
+git commit -am "edited"
+git checkout master
+git status
             </pre>
         </td>
     </tr>
@@ -207,11 +211,11 @@ Source: [THE DIFFERENCE BETWEEN GIT PULL, GIT FETCH AND GIT CLONE (AND GIT REBAS
         <td>Delete remote branch.</td>
         <td>
             <pre>
-            # git >= v1.5
-            git push origin :[branch-name]
+# git >= v1.5
+git push origin :[branch-name]
 
-            # git >= v1.7
-            git push origin --delete [branch-name]
+# git >= v1.7
+git push origin --delete [branch-name]
             </pre>
         </td>
     </tr>
@@ -310,3 +314,4 @@ Source: [Colors in Git](http://git-scm.com/book/en/v2/Customizing-Git-Git-Config
 - [Gitチートシート](http://qiita.com/ktaro/items/1d8c8ae698a88b1d6f0f)
 - [Github's cheatsheet](https://help.github.com/articles/git-cheatsheet/)
 - [Git tips from the trenches](https://ochronus.com/git-tips-from-the-trenches/)
+- [Git Howto: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
