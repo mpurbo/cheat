@@ -315,3 +315,5 @@ Source: [Colors in Git](http://git-scm.com/book/en/v2/Customizing-Git-Git-Config
 - [Github's cheatsheet](https://help.github.com/articles/git-cheatsheet/)
 - [Git tips from the trenches](https://ochronus.com/git-tips-from-the-trenches/)
 - [Git Howto: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
+- [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+- [Git pretty](http://justinhileman.info/article/git-pretty/)
