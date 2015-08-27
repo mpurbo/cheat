@@ -192,6 +192,10 @@ git status
         <td><code>git checkout -b [branch-name]</code></td>
     </tr>
     <tr>
+        <td>Push branch that has the same name as remote tag</br>Source: <a href="http://stackoverflow.com/questions/9378760/git-push-local-branch-with-same-name-as-remote-tag">git push local branch with same name as remote tag</a></td>
+        <td><code>git push origin refs/heads/[name]:refs/heads/[name]</code></td>
+    </tr>
+    <tr>
         <td>Pull other branch.</td>
         <td><code>git pull origin [branch-name]</code></td>
     </tr>
@@ -206,6 +210,10 @@ git status
     <tr>
         <td>Delete branch locally.</td>
         <td><code>git branch -d [branch-name]</code></td>
+    </tr>
+    <tr>
+        <td>Force delete branch locally (unmerged branch).</td>
+        <td><code>git branch -D [branch-name]</code></td>
     </tr>
     <tr>
         <td>Delete remote branch.</td>
