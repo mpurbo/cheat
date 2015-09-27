@@ -28,6 +28,18 @@ Command|Description
 `brew cleanup -n` | List all old versions that can be uninstalled by using `cleanup`.
 `brew uninstall $FORMULA --force` | Uninstall `$FORMULA` formula.
 
-Source:
+## Reinstall Brew
+
+```
+$ cd `brew --prefix`
+$ rm -rf Cellar
+$ brew prune
+$ rm -rf Library .git .gitignore bin/brew README.md share/man/man1/brew
+$ rm -rf ~/Library/Caches/Homebrew
+
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+## Sources
 - [Homebrewの導入と使い方](http://tech.caph.jp/2011/04/06/homebrew%E3%81%AE%E5%B0%8E%E5%85%A5%E3%81%A8%E4%BD%BF%E3%81%84%E6%96%B9/)
 - [Official FAQ](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/FAQ.md)
