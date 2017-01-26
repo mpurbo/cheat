@@ -192,7 +192,7 @@ git status
         <td><code>git checkout -b [branch-name]</code></td>
     </tr>
     <tr>
-        <td>Push branch that has the same name as remote tag</br>Source: <a href="http://stackoverflow.com/questions/9378760/git-push-local-branch-with-same-name-as-remote-tag">git push local branch with same name as remote tag</a></td>
+        <td>Push branch that has the same name as remote tag<br/>Source: <a href="http://stackoverflow.com/questions/9378760/git-push-local-branch-with-same-name-as-remote-tag">git push local branch with same name as remote tag</a></td>
         <td><code>git push origin refs/heads/[name]:refs/heads/[name]</code></td>
     </tr>
     <tr>
@@ -203,6 +203,10 @@ git status
         <td>Merge branch.</td>
         <td><code>git merge [branch-name]</code></td>
     </tr>
+    <tr>
+        <td>Create local branch by checking out from remote branch</td>
+        <td><code>git checkout -b [branch-name] origin/[branch-name]</code></td>
+    </tr>    
     <tr>
         <td>Push branch to remote origin.</td>
         <td><code>git push origin [branch-name]</code></td>
