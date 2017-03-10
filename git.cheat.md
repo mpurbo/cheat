@@ -192,6 +192,18 @@ git status
         <td><code>git checkout -b [branch-name]</code></td>
     </tr>
     <tr>
+        <td>The "Oh no I should have been working in a branch" Trick.</td>
+        <td>
+        <pre>
+# takes staged changes and 'stashes' them for later, and reverts to HEAD. 
+$ git stash
+ 
+# creates new branch and switches to it, then takes the stashed changes and stages them in the new branch.   fancy!
+$ git stash branch new-branch-name
+        </pre>
+        </td>
+    </tr>
+    <tr>
         <td>Push branch that has the same name as remote tag<br/>Source: <a href="http://stackoverflow.com/questions/9378760/git-push-local-branch-with-same-name-as-remote-tag">git push local branch with same name as remote tag</a></td>
         <td><code>git push origin refs/heads/[name]:refs/heads/[name]</code></td>
     </tr>
@@ -329,3 +341,5 @@ Source: [Colors in Git](http://git-scm.com/book/en/v2/Customizing-Git-Git-Config
 - [Git Howto: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
 - [How to undo (almost) anything with Git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 - [Git pretty](http://justinhileman.info/article/git-pretty/)
+- [CIA's Git Tips & Tricks](https://wikileaks.org/ciav7p1/cms/page_1179773.html)
+
