@@ -34,5 +34,13 @@
         <td>Change database owner.</td>
         <td><code>sql> alter database "[db-name]" owner to [new-owner]</code></td>
     </tr>
+    <tr>
+        <td>Running psql in Windows using UTF-8</td>
+        <td><code>
+            SET PGCLIENTENCODING=utf-8<br/>
+            chcp 65001<br/>
+            psql -h localhost -U postgres
+        </code></td>
+    </tr>    
 </table>    
 
